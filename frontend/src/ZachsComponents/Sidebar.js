@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { Button} from 'reactstrap';
 import LogedinUser from './LogedinUser';
 
+
 function Sidebar() {
     return (
         <SidebarContainer>
@@ -15,6 +16,7 @@ function Sidebar() {
                     <h3>
                         <FiberManualRecordIcon />
                         <LogedinUser />
+                        
                      
                     </h3>
                     <div className="Flex">
@@ -30,6 +32,9 @@ function Sidebar() {
                 <CreateIcon />
 
             </SidebarHeader>
+            <ProjectsDiv>
+                
+            </ProjectsDiv>
         </SidebarContainer>
 
 
@@ -82,4 +87,12 @@ const SidebarInfo = styled.div`
 
         }
 
+`
+const ProjectsDiv = styled.div`
+    background-color: purple;
+    color: white;
+    flex: 0.3;
+    border-top: 1px solid #49274b;
+    max-width: 260px;
+    margin-top: 60px;
 `

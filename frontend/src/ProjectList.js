@@ -57,6 +57,7 @@ class ProjectList extends Component {
                 </td>
                 <td>
                     <ButtonGroup>
+                        <Button size="sm" color="success" tag={Link} to={"/projects/" + project.id + "/" + project.name}>Tasks</Button>
                         <Button size="sm" color="primary" tag={Link} to={"/projects/" + project.id}>Edit</Button>
                         <Button size="sm" color="danger" onClick={() => this.remove(project.id)}>Delete</Button>
                     </ButtonGroup>

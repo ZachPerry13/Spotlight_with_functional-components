@@ -4,18 +4,17 @@ import {Avatar} from "@material-ui/core"
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import SearchIcon from '@mui/icons-material/Search';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import { Link } from 'react-router-dom';
+import LogedinUser from './LogedinUser';
 
 
 function Header() {
   return (
     <HeaderContainer>
      <HeaderLeft>
-       <HeaderAvatar tag={Link} to="/projects"
-       
-       />
+       <HeaderAvatar/>
+       <LogedinUser />
        <AccessTimeIcon />
-
+        
      </HeaderLeft>
      <HeaderSearch>
        <SearchIcon />
